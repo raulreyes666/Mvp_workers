@@ -1,0 +1,12 @@
+*{
+    text-align: center;
+    
+}
+
+#control{
+    padding: 50px 20px;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px 
+}
