@@ -24,7 +24,6 @@ if($varsesion == null || $varsesion== ''){
         .urls{
             padding: 20px;
             color: blueviolet;
-        
         }
     </style>
 </head>
@@ -32,9 +31,7 @@ if($varsesion == null || $varsesion== ''){
     <div class="container mt-5">
         <h1 class="title">Mostrar trabajadores registrados</h1>
         <a href="../home.php" class="urls">Volver al panel</a>
-        <a href="../logout.php" class="urls">Logout</a>
         <?php include('mostrar_trabajadores.php'); ?>
-        
     </div>
 
     <!-- Agrega el script de Bootstrap (opcional, solo si lo necesitas para funcionalidades específicas de Bootstrap) -->

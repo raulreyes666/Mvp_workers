@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 error_reporting(0);
 
@@ -23,16 +23,17 @@ if ($conn->connect_error) {
 }
 
 // Verificar que se recibieron los datos esperados
-if (isset($_POST['nombre']) && isset($_POST['cargo']) && isset($_POST['nuevo_nombre']) && isset($_POST['nuevo_cargo'])) {
+if (isset($_POST['nombre']) && isset($_POST['cargo']) && isset($_POST['nuevo_nombre']) && isset($_POST['nuevo_cargo']) && isset($_POST['nuevo_salario'])) {
     $nombre = $_POST['nombre'];
     $cargo = $_POST['cargo'];
     $nuevo_nombre = $_POST['nuevo_nombre'];
     $nuevo_cargo = $_POST['nuevo_cargo'];
+    $nuevo_salario = $_POST['nuevo_salario'];
 
     // Validar los datos recibidos si es necesario
 
     // Consulta SQL para actualizar el trabajador
-    $sql_update = "UPDATE chambeadores SET nombre = '$nuevo_nombre', cargo = '$nuevo_cargo' WHERE nombre = '$nombre' AND cargo = '$cargo'";
+    $sql_update = "UPDATE chambeadores SET nombre = '$nuevo_nombre', cargo = '$nuevo_cargo', salario = '$nuevo_salario' WHERE nombre = '$nombre' AND cargo = '$cargo'";
 
     // Ejecutar la consulta
     if ($conn->query($sql_update) === TRUE) {

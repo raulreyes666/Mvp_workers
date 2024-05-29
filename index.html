@@ -4,11 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login trabajadores</title>
-    <link rel="stylesheet" href="css/login.css">
+
+<style>
+    * {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	text-align: center;
+}
+
+body{
+	background-image: url('imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+form {
+	padding: 50px 20px;
+	background-color: #381b1ba6;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+
+.title {
+	text-align: center;
+	padding: 25px;
+	color: rgb(206, 203, 203)
+}
+
+
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+p{
+	margin: 20px;
+}
+.btn{
+	width: 25%;
+}
+
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
+.off{
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: rgb(0, 0, 0);
+	color: #fff
+
+}
+body{
+	background-color: rgb(79, 27, 202);
+
+	color:white;
+	
+}
+.mensaje{
+	width: 100%;
+	max-width: 350px;
+	margin: auto;
+	margin-top: 20px;
+	text-align: left;
+	padding: 6px;
+	color: red;
+
+}
+h6 {
+	text-align: center;
+	padding: 12px;
+    color: rgb(206, 203, 203);
+    line-height: 20px;
+}
+.gabo{
+	padding: 50px 20px;
+	background-color: #381b1ba6;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+header{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgba(0, 0, 0,.3);
+}
+header h1{
+    margin-left: 5px;
+    align-items: center;
+    width: calc(20% - 100px);
+    font-family: montez;
+    font-size: 55px;
+}
+header a{
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all ease 300ms;
+}
+
+.link{
+color: red;
+}
+</style>
+
 </head>
 <body>
    <form action="validar.php" method="post">
-       <h1 class="title">Login trabajadores</h1>
+       <h1 class="titlex">Login trabajadores</h1>
+       <p style="color: #ffffff"><b>*Ingresa solo letras y numeros, no uses espacios.*</b></p>
        <p>Usuario <input type="text" placeholder="Ingrese su nombre" name="usuario" pattern="[a-zA-Z0-9]+" required></p>
        <p>Contraseña <input type="password" placeholder="Ingrese su contraseña" name="contraseña" pattern="[a-zA-Z0-9]+" required></p>
        <input type="submit" value="Ingresar" class="btn">

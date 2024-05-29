@@ -72,6 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             text-align: center;
             
         }
+
+    
         form {
             padding: 50px 50px;
             
@@ -79,8 +81,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-top: 70px;
             padding-top: 28px;
             margin-bottom: 30px;
-            background-color: rgb(125, 217, 173) ;
+            background-color: gray ;
         }
+      
         .data {
             width: calc(100% - 20px);
         }
@@ -91,6 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         }
     </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <form  method="post" id="formTrabajador">
@@ -98,12 +103,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Nombre <input type="text" class="data" placeholder="Ingrese el nombre" name="nombre" pattern="[a-zA-Z]+" required></p>
         <p>Cargo <input type="text" class="data" placeholder="Ingrese el cargo" name="cargo" pattern="[a-zA-Z]+" required></p>
         <p>Salario <input type="number" class="data" placeholder="Ingrese el salario" name="salario" required></p>
-        <input type="submit" value="Agregar" class="btn">
-        <input type="reset" value="Borrar" class="btn" >
+        <input type="submit" value="Agregar" class="btn btn-primary">
+        <input type="reset" value="Borrar" class="btn btn-danger" >
     </form> 
     <a href="../home.php" class="urls">Volver al panel</a>
 
-    <a href="../logout.php" class="urls">Logout</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <script>

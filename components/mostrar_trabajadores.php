@@ -1,5 +1,4 @@
 <?php 
-
 session_start();
 error_reporting(0);
 
@@ -30,11 +29,12 @@ $result = $conn->query($sql);
 // Verificar si se encontraron resultados
 if ($result->num_rows > 0) {
     // Crear la tabla HTML
-    echo "<table class='table table-bordered'>
-            <tr class='table-success'>
-                <th>Nombre</th>
-                <th>Cargo</th>
-                <th>Salario</th>
+    echo "<br><br><div id='contador' class='alert alert-secondary' >Número de trabajadores registrados: " . $result->num_rows . "</div>";
+    echo "<table class='table table-bordered '>
+            <tr >
+                <th  style='background-color: gray;'>Nombre</th>
+                <th  style='background-color: gray;'>Cargo</th>
+                <th  style='background-color: gray;'>Salario</th>
             </tr>";
 
     // Mostrar los datos en la tabla

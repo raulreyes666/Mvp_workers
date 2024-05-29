@@ -31,7 +31,7 @@ if($varsesion == null || $varsesion== ''){
             margin-top: 70px;
             padding-top: 28px;
             margin-bottom: 30px;
-            background-color: rgb(125, 217, 173) ;
+            background-color: gray ;
         }
         .data {
             width: calc(100% - 20px);
@@ -42,7 +42,10 @@ if($varsesion == null || $varsesion== ''){
             color: blueviolet;
 
         }
+        
     </style>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -50,18 +53,17 @@ if($varsesion == null || $varsesion== ''){
         <h1 class="title">Eliminar trabajador</h1>
         <p>Nombre <input type="text" class="data" placeholder="Ingrese el nombre" name="nombre" pattern="[a-zA-Z]+" required></p>
         <p>Cargo <input type="text" class="data" placeholder="Ingrese el cargo" name="cargo" pattern="[a-zA-Z]+" required></p>
-        <input type="submit" value="Eliminar" class="btn">
-        <input type="reset" value="Limpiar" class="btn" >
+        <input type="submit" value="Eliminar" class="btn btn-primary">
+        <input type="reset" value="Limpiar" class="btn btn-danger" >
     </form> 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <a href="../home.php" class="urls">Volver al panel</a>
 
-<a href="../logout.php" class="urls">
-        Logout
-    </a>
+
 
 </body>
 </html>
